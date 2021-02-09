@@ -132,7 +132,7 @@ a:active {
 }
 
 .searchbar li a:hover, .dropdown:hover .dropbtn {
-  background-color: #003B5C;
+  background-color: #003DA5;
 }
 
 .searchbar li.dropdown {
@@ -249,6 +249,27 @@ footer {
 	padding: 50px;
 }
 
+footer a:link, a:visited, a:hover {
+	background-color: transparent;
+}
+
+footer a:link {
+	color: #53C3EE;
+	text-decoration: none;
+  }
+
+footer a:visited {
+	color: #f7931e;
+	text-decoration: none;
+  }
+
+footer a:hover {
+	color: #f7931e;
+	text-decoration: underline;
+  }
+
+
+
 .footertext {
 	padding: 3.75%;
 	display: grid;
@@ -262,7 +283,7 @@ footer {
 .footer-logo {
 	grid-row:5;
 	grid-column:3;
-	background-image: url("images/logo_dark.png");
+	background-image: url("images/logo_v3.png");
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;	
@@ -278,12 +299,12 @@ footer {
   }
 
 .footertext a:visited {
-	color: #8FD6BD;
+	color: #f7931e;
 	text-decoration: none;
   }
 
 .footertext a:hover {
-	color: #ED8D00;
+	color: #f7931e;
 	text-decoration: underline;
   }
 

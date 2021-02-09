@@ -1,0 +1,298 @@
+/*Style for our Digital Humanities Pages */
+
+/* General styling for whole page */
+* {
+  box-sizing: border-box;
+}
+
+body {
+	background-color:#003B5C;
+	text-align:left;
+	font-family:helvetica;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	margin-bottom: .5rem;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+li {
+	padding: 5px;
+}
+
+img {
+	padding: 5px;
+}
+
+/* hyperlinks */
+
+a:link, a:visited, a:hover, a:active {
+	background-color: transparent;
+}
+
+a:link {
+	color: #003B5C;
+	text-decoration: none;
+  }
+
+a:visited {
+	color: #53C3EE;
+	text-decoration: none;
+  }
+
+a:hover {
+	color: #ED8D00;
+	text-decoration: underline;
+  }
+
+a:active {
+	color: #FFC72C;
+	text-decoration: underline;
+  }
+
+/* Sections. Note that content must be assigned to a column and a row in the grid*/
+
+.colophon {
+	grid-row: 1;
+	grid-column: 1/4;
+	color: #003B5C;
+	text-align: left;
+	background-image: url(images/skyline.jpg);
+	max-height: 200px;
+	background-repeat: no-repeat;
+	background-size: 100% auto;	
+	background-color: #003B5C;
+	background-origin: content-box;
+}
+
+.banner-text {
+	grid-row: 1;
+	grid-column: 2/4;
+	text-align:right; 
+	font-size: 300%;
+	font-style: italic;
+	padding:20px;
+	color: #001c4d;
+}
+
+
+/*Navigation Bar*/
+
+.nav {
+	grid-row:2;
+	grid-column:1/4;
+	background-color:transparent;
+/*	background-color: #003B5C;
+*/}
+
+.searchbar {
+	grid-row: 2;
+	text-align: center;
+	grid-column: 2;
+	color: white;
+	background-color:transparent;
+/*	background-color: #003B5C;*/
+}
+
+/*Code here has been copy and pasted from ---  https://www.w3schools.com/Css/css_navbar_horizontal.asp */
+
+.searchbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.searchbar li {
+  float: left;
+}
+
+.searchbar li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.searchbar li a:hover, .dropdown:hover .dropbtn {
+  background-color: #003B5C;
+}
+
+.searchbar li.dropdown {
+  display: inline-block;
+}
+
+.searchbar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.searchbar .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.searchbar .dropdown-content a:hover {background-color: #f1f1f1;}
+
+.searchbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Bannner */
+
+.banner {
+	grid-row:2;
+	grid-column:2;
+	grid-row: 3;
+	grid-column: 1/4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("images/ongslu.png");
+	background-repeat: no-repeat;
+	background-size: cover;	
+	height: 400px;
+	background-color: #003B5C;
+}
+
+
+/* Main content */
+
+.main-content, .sidebarleft, .sidebarright {
+	background: white;
+}
+
+
+/* Main content */
+
+.main-content, .sidebarleft, .sidebarright {
+	background: white;
+}
+
+
+.main-content {
+	grid-row:4;
+	grid-column:2;
+	padding: 50px;
+	line-height: 2.5;
+
+}
+
+@media (max-width: 600px){
+	.main-content {
+		grid-column:1/4;
+        padding: 10px;
+        z-index: 1;
+    	}
+}
+
+
+.coursename {
+	text-align:center;
+	padding:20px;
+}
+
+.date {
+	text-align:right;
+	font-size:150%;
+}
+
+
+
+/*Sidebars */
+
+.sidebarleft {
+	grid-column: 1;
+	grid-row: 4/5;
+}
+
+
+.sidebarright {
+	grid-column: 3;
+	grid-row: 4/5;
+}
+
+.footer, .footertext {
+	color: #FFFFFF
+}
+
+footer {
+	grid-row:5;
+	grid-column:1/4;
+	background:#003DA5;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 50px;
+}
+
+.footertext {
+	padding: 3.75%;
+	display: grid;
+	grid-row:5;
+	grid-column:2;
+	grid-template-columns: 30% 30% 30%;
+	grid-column-gap: 5%;
+	grid-row-gap: 50px;
+   }
+
+.footer-logo {
+	grid-row:5;
+	grid-column:3;
+	background-image: url("images/logo_dark.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;	
+}
+
+.footertext a:link, a:visited, a:hover {
+	background-color: transparent;
+}
+
+.footertext a:link {
+	color: #53C3EE;
+	text-decoration: none;
+  }
+
+.footertext a:visited {
+	color: #8FD6BD;
+	text-decoration: none;
+  }
+
+.footertext a:hover {
+	color: #ED8D00;
+	text-decoration: underline;
+  }
+
+.lowerfooter {
+	grid-row:6;
+	grid-column:2;
+	background:#003B5C;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 50px;
+}
+

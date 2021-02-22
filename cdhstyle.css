@@ -10,7 +10,7 @@ body {
 	text-align:left;
 	font-family:helvetica;
 	display: grid;
-	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-columns: 1fr 4fr 1fr;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -40,6 +40,9 @@ img {
 	padding: 5px;
 }
 
+.paragraph-image {
+	float: right;
+}
 /* hyperlinks */
 
 a:link, a:visited, a:hover, a:active {
@@ -79,16 +82,6 @@ a:active {
 	background-size: 100% auto;	
 	background-color: #003B5C;
 	background-origin: content-box;
-}
-
-.banner-text {
-	grid-row: 1;
-	grid-column: 2/4;
-	text-align:right; 
-	font-size: 300%;
-	font-style: italic;
-	padding:20px;
-	color: #001c4d;
 }
 
 
@@ -165,8 +158,6 @@ a:active {
 /* Bannner */
 
 .banner {
-	grid-row:2;
-	grid-column:2;
 	grid-row: 3;
 	grid-column: 1/4;
 	display: flex;
@@ -175,11 +166,19 @@ a:active {
 	background-image: url("images/ongslu.png");
 	background-repeat: no-repeat;
 	background-size: cover;	
-	height: 400px;
+	height: 300px;
 	background-color: #003B5C;
 }
 
-
+.banner-text {
+	grid-row: 3;
+	grid-column: 2/4;
+	text-align:right; 
+	font-size: 300%;
+	font-style: italic;
+	padding:20px;
+	color: white;
+}
 /* Main content */
 
 .main-content, .sidebarleft, .sidebarright {
@@ -198,7 +197,7 @@ a:active {
 	grid-row:4;
 	grid-column:2;
 	padding: 50px;
-	line-height: 2.5;
+	line-height: 1.5;
 
 }
 
@@ -249,27 +248,6 @@ footer {
 	padding: 50px;
 }
 
-footer a:link, a:visited, a:hover {
-	background-color: transparent;
-}
-
-footer a:link {
-	color: #53C3EE;
-	text-decoration: none;
-  }
-
-footer a:visited {
-	color: #f7931e;
-	text-decoration: none;
-  }
-
-footer a:hover {
-	color: #f7931e;
-	text-decoration: underline;
-  }
-
-
-
 .footertext {
 	padding: 3.75%;
 	display: grid;
@@ -289,7 +267,7 @@ footer a:hover {
 	background-position: center;	
 }
 
-.footertext a:link, a:visited, a:hover {
+.footertext, .lowerfooter a:link, a:visited, a:hover {
 	background-color: transparent;
 }
 
@@ -317,3 +295,21 @@ footer a:hover {
 	padding: 50px;
 }
 
+.lowerfooter a:link, a:visited, a:hover {
+	background-color: transparent;
+}
+
+.lowerfooter a:link {
+	color: #53C3EE;
+	text-decoration: none;
+  }
+
+.lowerfooter a:visited {
+	color: #f7931e;
+	text-decoration: none;
+  }
+
+.lowerfooter a:hover {
+	color: #f7931e;
+	text-decoration: underline;
+  }
